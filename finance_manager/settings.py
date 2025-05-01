@@ -16,10 +16,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-3ys3qd-iaa83v%9rs9kbr
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # ✅ для работы через переменные окружения
 
 ALLOWED_HOSTS = [
-    'your-render-app-name.onrender.com',  # замените на своё имя render
+    'finance-manager-hyjk.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -34,7 +35,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # ✅ добавляем whitenoise
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # ✅ ДОБАВЬ ЭТУ СТРОКУ
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
